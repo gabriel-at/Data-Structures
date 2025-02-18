@@ -31,7 +31,7 @@ public class LinearSearch {
 
         long end = threadMXBean.getCurrentThreadCpuTime();
         long cpuTime = end - start;
-        System.out.println("\nCPU Time: " + cpuTime / 1000000.0 + " milliseconds");
+        System.out.println("\nCPU Time: " + cpuTime / 1000000000.0 + " seconds");
     }
 }
 
