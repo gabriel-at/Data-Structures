@@ -60,7 +60,7 @@ public class BubbleSortRandomNumbers {
             writeNumbersToFile(outputFilename, numbers);
             System.out.println("Saved to " + outputFilename);
             long endTime = System.currentTimeMillis();
-            long searchTime = endTime - startTime
+            long searchTime = endTime - startTime;
         } catch (IOException e) {
             System.err.println("File error: " + e.getMessage());
         }
