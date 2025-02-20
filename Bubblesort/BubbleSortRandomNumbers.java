@@ -44,7 +44,7 @@ public class BubbleSortRandomNumbers {
     	// Sort the numbers and measure execution time
     	long startTime = System.currentTimeMillis();
         // File paths for input and output
-        String inputFilename = "RandNumb.txt", outputFilename = "sorted_numbers.txt";
+        String inputFilename = "RandNumb.txt", outputFilename = "sorted_numbers_bubble.txt";
         try {
         	
             // Read numbers from input file
