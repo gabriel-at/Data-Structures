@@ -61,7 +61,7 @@ public class BubbleSortRandomNumbers {
             System.out.println("Saved to " + outputFilename);
             long endTime = System.currentTimeMillis();
             long searchTime = endTime - startTime;
-            System.out.println("Ran in " + searchTime + "ms"
+            System.out.println("Ran in " + searchTime + "ms") ;
         } catch (IOException e) {
             System.err.println("File error: " + e.getMessage());
         }
