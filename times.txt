@@ -1,0 +1,44 @@
+
+Merge Sort: CPU Time: 0.18412665 seconds
+
+Quick Sort: CPU Time: 0.00287206 seconds
+
+Bubble Sort: CPU Time: 0.02972334 seconds
+--------Binary Search--------
+
+Binary Search: CPU Time: 3.887E-6 seconds - sortedNumbMerge.txt
+# 1 found at line 2
+
+Binary Search: CPU Time: 5.02E-6 seconds - sortedNumbQuick.txt
+# 1 found at line 2
+
+Binary Search: CPU Time: 3.867E-6 seconds - sortedNumbBubble.txt
+# 1 found at line 2
+
+Binary Search: CPU Time: 3.537E-6 seconds - sortedNumbMerge.txt
+# 500 found at line 501
+
+Binary Search: CPU Time: 3.436E-6 seconds - sortedNumbQuick.txt
+# 500 found at line 501
+
+Binary Search: CPU Time: 3.587E-6 seconds - sortedNumbBubble.txt
+# 500 found at line 501
+
+Binary Search: CPU Time: 5.681E-6 seconds - sortedNumbMerge.txt
+# 900 found at line 901
+
+Binary Search: CPU Time: 3.918E-6 seconds - sortedNumbQuick.txt
+# 900 found at line 901
+
+Binary Search: CPU Time: 3.797E-6 seconds - sortedNumbBubble.txt
+# 900 found at line 901
+--------Linear Search--------
+
+Linear Search: CPU Time: 5.31772E-4 seconds - RandNumb.txt
+# 1 found at line 3
+
+Linear Search: CPU Time: 0.001182376 seconds - RandNumb.txt
+# 500 found at line 447
+
+Linear Search: CPU Time: 7.60978E-4 seconds - RandNumb.txt
+# 900 found at line 153
