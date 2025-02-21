@@ -26,15 +26,30 @@ public class MergeSort {
 		System.out.println("\nMerge Sort: CPU Time: " + cpuTime / 100000000.0 + " seconds");
 	}
 
-	private static int[] readArrFromFile(String filename) throws IOException {
-		List<Integer> numbers = new ArrayList<>();
-		try (Scanner scnr = new Scanner(new File(filename))) {
-			while (scnr.hasNextInt()) {
-				numbers.add(scnr.nextInt());
-			}
-		}
-		return numbers.stream().mapToInt(i -> i).toArray();
-	}
+    // Reads numbers from a file and returns them as an integer array
+    public static int[] readArrFromFile(String filename) throws IOException {
+        // List<Integer> numberList = new ArrayList<>();
+        // try (BufferedReader reader = Files.newBufferedReader(Paths.get(filename))) {
+        //     for (String line; (line = reader.readLine()) != null;)
+        //         for (String numStr : line.split("\\s+")) // Split by whitespace
+        //             try { numberList.add(Integer.parseInt(numStr.trim())); }
+        //             catch (NumberFormatException e) { System.err.println("Invalid number format: " + numStr); }
+        // }
+        // if (numberList.isEmpty()) throw new IOException("File is empty or invalid.");
+        // // return numberList.stream().mapToInt(i -> i).toArray();
+        // return numberList.st1
+
+        int[] nums = new int[1000];
+
+        Scanner scan = new Scanner(new File(filename));
+
+        for(int i = 0; scan.hasNextInt(); i++){
+            nums[i] = scan.nextInt();
+        }
+        scan.close();
+
+        return nums;
+    }
 
 	private static void mergeSort(int[] arr, int left, int right) {
 		if (left < right) {
