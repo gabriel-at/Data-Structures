@@ -9,19 +9,21 @@ import java.lang.management.ManagementFactory;
 public class MergeSort {
 	public static void main(String[] args) {
 		ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
-		long start = threadMXBean.getCurrentThreadCpuTime();
+		long start = 0;
+		long end = 0;
 		String inputFile = "RandNumb.txt"; // Input File with rand nums
 		String outputFile = "sortedNumbMerge.txt"; // output file with sorted nums
 
 		try {
 			int[] arr = readArrFromFile(inputFile);
+			start = threadMXBean.getCurrentThreadCpuTime();
 			mergeSort(arr, 0, arr.length - 1);
+			end = threadMXBean.getCurrentThreadCpuTime();
 			writeArrToFile(arr, outputFile);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-		long end = threadMXBean.getCurrentThreadCpuTime();
 		long cpuTime = end - start;
 		System.out.println("\nMerge Sort: CPU Time: " + cpuTime / 100000000.0 + " seconds");
 	}
