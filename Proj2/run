@@ -1,6 +1,5 @@
 #!/bin/sh
-# This is a helper script to run the whole project
-# This script takes two inputs the location of the list of numbers and the value you are looking for
+# run this script to build and run the whole project
 
 javac RandomNumbers.java
 java RandomNumbers 
