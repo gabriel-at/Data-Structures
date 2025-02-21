@@ -1,3 +1,5 @@
+// package Proj2;
+
 import java.io.FileWriter;
 import java.util.Random;
 import java.io.IOException;
