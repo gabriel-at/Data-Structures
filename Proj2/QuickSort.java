@@ -9,16 +9,23 @@ import java.io.*;
 
 public class QuickSort {
 
-	public static void writeNumbersToFile(String filename, int[] numbers) throws IOException {
-        try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(filename))) {
-            // writer.write(Arrays.toString(numbers).replaceAll("[\\[\\],]", ""));
-            // writer.write(Arrays.toString(numbers));
-            for(int i : numbers){
-                writer.write(Integer.toString(i));
-                writer.write('\n');
-            }
-        }
-    }
+	// public static void writeNumbersToFile(String filename, int[] numbers) throws IOException {
+    //     try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(filename))) {
+    //         // writer.write(Arrays.toString(numbers).replaceAll("[\\[\\],]", ""));
+    //         // writer.write(Arrays.toString(numbers));
+    //         for(int i : numbers){
+    //             writer.write(Integer.toString(i));
+    //             writer.write('\n');
+    //         }
+    //     }
+    // }
+	private static void writeNumbersToFile(String filename, int[] arr) throws IOException {
+		try (PrintWriter writer = new PrintWriter(new File(filename))) {
+			for (int num : arr) {
+				writer.println(num);
+			}
+		}
+	}
 	
 	public static void swap(int[] data, int a, int b)
     {
