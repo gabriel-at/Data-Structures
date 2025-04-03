@@ -1,55 +1,100 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
 
+class Node implements Comparable<Node>{
+    String c;
+    int freq;
+    Node left;
+    Node right;
 
-public class huffman { 
-    private class hnode{
-        String c;
-        hnode parent;
-        hnode left;
-        hnode right;
-
-        public hnode(String c){
-            this.c = c;
-            this.parent = null;
-            this.left = null;
-            this.right = null;
-        }
+    Node(String c, int freq, Node left, Node right){
+        this.c = c;
+        this.freq = freq;
+        this.left = left;
+        this.right = right;
     }
 
-    HashMap<String, Integer> freq = new HashMap<>();
+    public Node(int freq, Node left, Node right) {
+        this.c = null; // Non-leaf nodes don't store a character
+        this.freq = freq;
+        this.left = left;
+        this.right = right;
+    }
 
-    ArrayList<String> sorted = new ArrayList<>();
+    @Override
+    public int compareTo(Node other){
+        return this.freq - other.freq;
+    }
+}
 
-    String phrase;
+public class huffman{
+    public String inputString;
+    public Map<String, String> conversion;
+    public String encodedString = "";
+    public HashMap<String, Integer> frequencies = new HashMap<>();
 
-    public huffman(String text){
-        this.phrase = text;
+    public huffman(String input){
+        this.inputString = input;
 
-        // int pointer = 0;
-        // boolean sorted = false;
-        // String s : text.split("")
-        for(int i = 0; i < text.split("").length; i++){
-            String s = text.split("")[i];
+        PriorityQueue<Node> pq = new PriorityQueue<>();
+        getFreqs(input, pq);
+
+        Node root = buildTree(pq);
+
+        HashMap<String, String> codes = new HashMap<>();
+        genCodes(root, "", codes);
+
+        this.conversion = codes;
+
+        for(int i = 0; i < input.length(); i++){
+            encodedString += codes.get(input.substring(i, i+1));
+        }
+
+    }
+
+    private void getFreqs(String input, PriorityQueue<Node> pq){
+        // HashMap<String, Integer> frequencies = new HashMap<>();
+        ArrayList<String> keys = new ArrayList<>();
+
+        for(int i = 0; i < input.split("").length; i++){
+            String s = input.split("")[i];
             try{
-                freq.put(s, freq.get(s)+1);
+                frequencies.put(s, frequencies.get(s)+1);
             } catch(Exception e){
-                freq.put(s, 1);
-                sorted.add(s);
+                frequencies.put(s, 1);
+                keys.add(s);
             }
-
+    
         }
 
-        // sort "sorted" arraylist
-        Collections.sort(sorted, new Comparator<String>() {
-            @Override
-            public int compare(String s1, String s2){
-                return freq.get(s1) - freq.get(s2);
-            }
-        });
-        
+        for(int i = 0; i < keys.size(); i++){
+            pq.add(new Node(keys.get(i), frequencies.get(keys.get(i)), null, null));
+        }
     }
 
+    // returns root
+    private Node buildTree(PriorityQueue<Node> pq){
+        while(pq.size() > 1){
+            Node left = pq.poll();
+            Node right = pq.poll();
+
+            Node merge = new Node(left.freq + right.freq, left, right);
+
+            pq.add(merge);
+        }
+        return pq.poll();
+    }
+
+    private void genCodes(Node node, String currentCode, Map<String, String> codes){
+        if(node == null) return;
+
+        if(node.c != null){
+            codes.put(node.c, currentCode);
+        }
+
+        genCodes(node.left, currentCode + "0", codes);
+        genCodes(node.right, currentCode + "1", codes);
+    }
 }
