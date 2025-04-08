@@ -1,0 +1,44 @@
+#!/bin/sh
+# run this script to build and run the whole project
+
+javac RandomNumbers.java
+java RandomNumbers 
+
+javac MergeSort.java
+java MergeSort
+
+# javac quickSort.java
+# java quickSort
+
+javac QuickSort.java
+java QuickSort
+
+javac BubbleSortRandomNumbers.java
+java BubbleSortRandomNumbers
+
+javac LinearSearch.java
+
+javac BinarySearch.java
+
+echo --------Binary Search--------
+
+java BinarySearch sortedNumbMerge.txt 1
+java BinarySearch sortedNumbQuick.txt 1
+java BinarySearch sortedNumbBubble.txt 1
+
+java BinarySearch sortedNumbMerge.txt 500
+java BinarySearch sortedNumbQuick.txt 500
+java BinarySearch sortedNumbBubble.txt 500
+
+java BinarySearch sortedNumbMerge.txt 900
+java BinarySearch sortedNumbQuick.txt 900
+java BinarySearch sortedNumbBubble.txt 900
+
+echo --------Linear Search--------
+
+java LinearSearch RandNumb.txt 1
+java LinearSearch RandNumb.txt 500
+java LinearSearch RandNumb.txt 900
+
+rm *.class
+# rm *.txt

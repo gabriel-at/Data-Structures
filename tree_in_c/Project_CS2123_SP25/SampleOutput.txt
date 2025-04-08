@@ -1,0 +1,610 @@
+
+This solution was completed by:
+<student name>
+<student name #2 (if no partner write "N/A")>
+
+----------------------------TESTING with budget = $41850.00----------------------------
+
+ITEMS PURCHASED
+----------------------------
+Department of Computer-Science               - Upgrade-Fox-Machines           -                       $9972.75
+Department of Physics-And-Astronomy          - Apple                          -                          $0.80
+Department of Mathematics                    - Graph-Paper                    -                        $149.50
+Department of Chemistry                      - Hydrogen                       -                        $400.00
+Department of Physics-And-Astronomy          - Cannon                         -                       $2150.00
+Department of Mathematics                    - Coffee                         -                        $300.00
+Department of Chemistry                      - Helium                         -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Lithium                        -                        $400.00
+Department of Chemistry                      - Beryllium                      -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Boron                          -                        $400.00
+Department of Chemistry                      - Carbon                         -                        $400.00
+Department of Physics-And-Astronomy          - Model-Train-Set                -                        $500.00
+Department of Chemistry                      - Nitrogen                       -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Physics-And-Astronomy          - Glow-In-The-Dark-Stars         -                          $9.99
+Department of Physics-And-Astronomy          - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Oxygen                         -                        $400.00
+Department of Chemistry                      - Fluorine                       -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Neon                           -                        $400.00
+Department of Physics-And-Astronomy          - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Sodium                         -                        $400.00
+Department of Chemistry                      - Magnesium                      -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Physics-And-Astronomy          - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Aluminum                       -                        $400.00
+Department of Chemistry                      - Silicon                        -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Phosphorus                     -                        $400.00
+Department of Physics-And-Astronomy          - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Sulfur                         -                        $400.00
+Department of Chemistry                      - Chlorine                       -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Physics-And-Astronomy          - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Argon                          -                        $400.00
+Department of Chemistry                      - Potassium                      -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Calcium                        -                        $400.00
+Department of Physics-And-Astronomy          - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Scandium                       -                        $400.00
+Department of Chemistry                      - Titanium                       -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Physics-And-Astronomy          - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Vanadium                       -                        $400.00
+Department of Chemistry                      - Chromium                       -                        $400.00
+Department of Mathematics                    - Scholarship                    -                       $1000.00
+Department of Chemistry                      - Manganese                      -                        $400.00
+Department of Physics-And-Astronomy          - Scholarship                    -                       $1000.00
+Department of Computer-Science               - Donuts-For-ICPC-Club           -                        $500.00
+Department of Chemistry                      - Scholarship                    -                        $266.96
+
+
+Department of Chemistry
+Total Spent       = $10266.96
+Percent of Budget = 24.53%
+----------------------------
+ITEMS RECEIVED
+Hydrogen                       -                        $400.00
+Helium                         -                        $400.00
+Lithium                        -                        $400.00
+Beryllium                      -                        $400.00
+Boron                          -                        $400.00
+Carbon                         -                        $400.00
+Nitrogen                       -                        $400.00
+Oxygen                         -                        $400.00
+Fluorine                       -                        $400.00
+Neon                           -                        $400.00
+Sodium                         -                        $400.00
+Magnesium                      -                        $400.00
+Aluminum                       -                        $400.00
+Silicon                        -                        $400.00
+Phosphorus                     -                        $400.00
+Sulfur                         -                        $400.00
+Chlorine                       -                        $400.00
+Argon                          -                        $400.00
+Potassium                      -                        $400.00
+Calcium                        -                        $400.00
+Scandium                       -                        $400.00
+Titanium                       -                        $400.00
+Vanadium                       -                        $400.00
+Chromium                       -                        $400.00
+Manganese                      -                        $400.00
+Scholarship                    -                        $266.96
+
+ITEMS NOT RECEIVED
+Iron                           -                        $400.00
+Cobalt                         -                        $400.00
+Nickel                         -                        $400.00
+Copper                         -                        $400.00
+Zinc                           -                        $400.00
+Gallium                        -                        $400.00
+Germanium                      -                        $400.00
+Arsenic                        -                        $400.00
+Selenium                       -                        $400.00
+Bromine                        -                        $400.00
+Krypton                        -                        $400.00
+Rubidium                       -                        $400.00
+Strontium                      -                        $400.00
+Yttrium                        -                        $400.00
+Zirconium                      -                        $400.00
+Niobium                        -                        $400.00
+Molybdenum                     -                        $400.00
+Technetium                     -                        $400.00
+Ruthenium                      -                        $400.00
+Rhodium                        -                        $400.00
+Palladium                      -                        $400.00
+Silver                         -                        $400.00
+Cadmium                        -                        $400.00
+Indium                         -                        $400.00
+Tin                            -                        $400.00
+Antimony                       -                        $400.00
+Tellurium                      -                        $400.00
+Iodine                         -                        $400.00
+Xenon                          -                        $400.00
+Cesium                         -                        $400.00
+Barium                         -                        $400.00
+Lanthanum                      -                        $400.00
+Cerium                         -                        $400.00
+Praseodymium                   -                        $400.00
+Neodymium                      -                        $400.00
+Promethium                     -                        $400.00
+Samarium                       -                        $400.00
+Europium                       -                        $400.00
+Gadolinium                     -                        $400.00
+Terbium                        -                        $400.00
+Dysprosium                     -                        $400.00
+Holmium                        -                        $400.00
+Erbium                         -                        $400.00
+Thulium                        -                        $400.00
+Ytterbium                      -                        $400.00
+Lutetium                       -                        $400.00
+Hafnium                        -                        $400.00
+Tantalum                       -                        $400.00
+Tungsten                       -                        $400.00
+Rhenium                        -                        $400.00
+Osmium                         -                        $400.00
+Iridium                        -                        $400.00
+Platinum                       -                        $400.00
+Gold                           -                        $400.00
+Mercury                        -                        $400.00
+Thallium                       -                        $400.00
+Lead                           -                        $400.00
+Bismuth                        -                        $400.00
+Polonium                       -                        $400.00
+Astatine                       -                        $400.00
+Radon                          -                        $400.00
+Francium                       -                        $400.00
+Radium                         -                        $400.00
+Actinium                       -                        $400.00
+Thorium                        -                        $400.00
+Protactinium                   -                        $400.00
+Uranium                        -                        $400.00
+Neptunium                      -                        $400.00
+Plutonium                      -                        $400.00
+Americium                      -                        $400.00
+Curium                         -                        $400.00
+Berkelium                      -                        $400.00
+Californium                    -                        $400.00
+Einsteinium                    -                        $400.00
+Fermium                        -                        $400.00
+Mendelevium                    -                        $400.00
+Nobelium                       -                        $400.00
+Lawerencium                    -                        $400.00
+Rutherfordium                  -                        $400.00
+Dubnium                        -                        $400.00
+Seaborgium                     -                        $400.00
+Bohrium                        -                        $400.00
+Hassium                        -                        $400.00
+Meitnerium                     -                        $400.00
+Darmstadtium                   -                        $400.00
+Roentgenium                    -                        $400.00
+Copernicium                    -                        $400.00
+Nihonium                       -                        $400.00
+Flerovium                      -                        $400.00
+Moscovium                      -                        $400.00
+Livermorium                    -                        $400.00
+Tennessine                     -                        $400.00
+Oganesson                      -                        $400.00
+
+
+Department of Mathematics
+Total Spent       = $10449.50
+Percent of Budget = 24.97%
+----------------------------
+ITEMS RECEIVED
+Graph-Paper                    -                        $149.50
+Coffee                         -                        $300.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+
+ITEMS NOT RECEIVED
+
+
+Department of Computer-Science
+Total Spent       = $10472.75
+Percent of Budget = 25.02%
+----------------------------
+ITEMS RECEIVED
+Upgrade-Fox-Machines           -                       $9972.75
+Donuts-For-ICPC-Club           -                        $500.00
+
+ITEMS NOT RECEIVED
+New-Data-Science-Building      -                  $128000000.00
+Gaming-Laptop                  -                       $1999.99
+
+
+Department of Physics-And-Astronomy
+Total Spent       = $10660.79
+Percent of Budget = 25.47%
+----------------------------
+ITEMS RECEIVED
+Apple                          -                          $0.80
+Cannon                         -                       $2150.00
+Model-Train-Set                -                        $500.00
+Glow-In-The-Dark-Stars         -                          $9.99
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+
+ITEMS NOT RECEIVED
+Space-Telescope                -                 $1024000000.00
+
+
+----------------------------TESTING with budget = $0.01----------------------------
+
+ITEMS PURCHASED
+----------------------------
+Department of Computer-Science               - Scholarship                    -                          $0.01
+
+
+Department of Physics-And-Astronomy
+Total Spent       = $0.00
+Percent of Budget = 0.00%
+----------------------------
+ITEMS NOT RECEIVED
+Apple                          -                          $0.80
+Cannon                         -                       $2150.00
+Model-Train-Set                -                        $500.00
+Glow-In-The-Dark-Stars         -                          $9.99
+Space-Telescope                -                 $1024000000.00
+
+
+Department of Mathematics
+Total Spent       = $0.00
+Percent of Budget = 0.00%
+----------------------------
+ITEMS NOT RECEIVED
+Graph-Paper                    -                        $149.50
+Coffee                         -                        $300.00
+
+
+Department of Chemistry
+Total Spent       = $0.00
+Percent of Budget = 0.00%
+----------------------------
+ITEMS NOT RECEIVED
+Hydrogen                       -                        $400.00
+Helium                         -                        $400.00
+Lithium                        -                        $400.00
+Beryllium                      -                        $400.00
+Boron                          -                        $400.00
+Carbon                         -                        $400.00
+Nitrogen                       -                        $400.00
+Oxygen                         -                        $400.00
+Fluorine                       -                        $400.00
+Neon                           -                        $400.00
+Sodium                         -                        $400.00
+Magnesium                      -                        $400.00
+Aluminum                       -                        $400.00
+Silicon                        -                        $400.00
+Phosphorus                     -                        $400.00
+Sulfur                         -                        $400.00
+Chlorine                       -                        $400.00
+Argon                          -                        $400.00
+Potassium                      -                        $400.00
+Calcium                        -                        $400.00
+Scandium                       -                        $400.00
+Titanium                       -                        $400.00
+Vanadium                       -                        $400.00
+Chromium                       -                        $400.00
+Manganese                      -                        $400.00
+Iron                           -                        $400.00
+Cobalt                         -                        $400.00
+Nickel                         -                        $400.00
+Copper                         -                        $400.00
+Zinc                           -                        $400.00
+Gallium                        -                        $400.00
+Germanium                      -                        $400.00
+Arsenic                        -                        $400.00
+Selenium                       -                        $400.00
+Bromine                        -                        $400.00
+Krypton                        -                        $400.00
+Rubidium                       -                        $400.00
+Strontium                      -                        $400.00
+Yttrium                        -                        $400.00
+Zirconium                      -                        $400.00
+Niobium                        -                        $400.00
+Molybdenum                     -                        $400.00
+Technetium                     -                        $400.00
+Ruthenium                      -                        $400.00
+Rhodium                        -                        $400.00
+Palladium                      -                        $400.00
+Silver                         -                        $400.00
+Cadmium                        -                        $400.00
+Indium                         -                        $400.00
+Tin                            -                        $400.00
+Antimony                       -                        $400.00
+Tellurium                      -                        $400.00
+Iodine                         -                        $400.00
+Xenon                          -                        $400.00
+Cesium                         -                        $400.00
+Barium                         -                        $400.00
+Lanthanum                      -                        $400.00
+Cerium                         -                        $400.00
+Praseodymium                   -                        $400.00
+Neodymium                      -                        $400.00
+Promethium                     -                        $400.00
+Samarium                       -                        $400.00
+Europium                       -                        $400.00
+Gadolinium                     -                        $400.00
+Terbium                        -                        $400.00
+Dysprosium                     -                        $400.00
+Holmium                        -                        $400.00
+Erbium                         -                        $400.00
+Thulium                        -                        $400.00
+Ytterbium                      -                        $400.00
+Lutetium                       -                        $400.00
+Hafnium                        -                        $400.00
+Tantalum                       -                        $400.00
+Tungsten                       -                        $400.00
+Rhenium                        -                        $400.00
+Osmium                         -                        $400.00
+Iridium                        -                        $400.00
+Platinum                       -                        $400.00
+Gold                           -                        $400.00
+Mercury                        -                        $400.00
+Thallium                       -                        $400.00
+Lead                           -                        $400.00
+Bismuth                        -                        $400.00
+Polonium                       -                        $400.00
+Astatine                       -                        $400.00
+Radon                          -                        $400.00
+Francium                       -                        $400.00
+Radium                         -                        $400.00
+Actinium                       -                        $400.00
+Thorium                        -                        $400.00
+Protactinium                   -                        $400.00
+Uranium                        -                        $400.00
+Neptunium                      -                        $400.00
+Plutonium                      -                        $400.00
+Americium                      -                        $400.00
+Curium                         -                        $400.00
+Berkelium                      -                        $400.00
+Californium                    -                        $400.00
+Einsteinium                    -                        $400.00
+Fermium                        -                        $400.00
+Mendelevium                    -                        $400.00
+Nobelium                       -                        $400.00
+Lawerencium                    -                        $400.00
+Rutherfordium                  -                        $400.00
+Dubnium                        -                        $400.00
+Seaborgium                     -                        $400.00
+Bohrium                        -                        $400.00
+Hassium                        -                        $400.00
+Meitnerium                     -                        $400.00
+Darmstadtium                   -                        $400.00
+Roentgenium                    -                        $400.00
+Copernicium                    -                        $400.00
+Nihonium                       -                        $400.00
+Flerovium                      -                        $400.00
+Moscovium                      -                        $400.00
+Livermorium                    -                        $400.00
+Tennessine                     -                        $400.00
+Oganesson                      -                        $400.00
+
+
+Department of Computer-Science
+Total Spent       = $0.01
+Percent of Budget = 100.00%
+----------------------------
+ITEMS RECEIVED
+Scholarship                    -                          $0.01
+
+ITEMS NOT RECEIVED
+Upgrade-Fox-Machines           -                       $9972.75
+New-Data-Science-Building      -                  $128000000.00
+Donuts-For-ICPC-Club           -                        $500.00
+Gaming-Laptop                  -                       $1999.99
+
+
+----------------------------TESTING with budget = $27961.10----------------------------
+
+ITEMS PURCHASED
+----------------------------
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - A-Item01                       -                        $100.01
+Department of GGGGGGGGGGGGGGGGGGGGGGGGGGGGGG - G-Item02                       -                          $0.01
+Department of BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB - Scholarship                    -                       $1000.00
+Department of DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD - D-Item000000000000000000000001 -                       $4000.00
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE - E-Item01                       -                        $102.01
+Department of CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC - C-Item01                       -                          $0.01
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - F-Item01                       -                        $101.01
+Department of GGGGGGGGGGGGGGGGGGGGGGGGGGGGGG - G-Item04                       -                          $0.02
+Department of CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC - Scholarship                    -                       $1000.00
+Department of GGGGGGGGGGGGGGGGGGGGGGGGGGGGGG - Scholarship                    -                       $1000.00
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - A-Item02                       -                        $200.02
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - F-Item02                       -                        $201.02
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE - E-Item02                       -                        $202.02
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - A-Item03                       -                        $300.03
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - F-Item03                       -                        $301.03
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE - E-Item03                       -                        $302.03
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - A-Item04                       -                        $400.04
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - F-Item04                       -                        $401.04
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE - E-Item04                       -                        $402.04
+Department of BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB - Scholarship                    -                       $1000.00
+Department of CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC - Scholarship                    -                       $1000.00
+Department of GGGGGGGGGGGGGGGGGGGGGGGGGGGGGG - Scholarship                    -                       $1000.00
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - A-Item05                       -                        $500.05
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - F-Item05                       -                        $501.05
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE - E-Item05                       -                        $502.05
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - A-Item06                       -                        $600.06
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - F-Item06                       -                        $601.06
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE - E-Item06                       -                        $602.06
+Department of BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB - Scholarship                    -                       $1000.00
+Department of CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC - Scholarship                    -                       $1000.00
+Department of GGGGGGGGGGGGGGGGGGGGGGGGGGGGGG - Scholarship                    -                       $1000.00
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - A-Item07                       -                        $700.07
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - F-Item07                       -                        $701.07
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE - E-Item07                       -                        $702.07
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - A-Item08                       -                        $800.08
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - F-Item08                       -                        $801.08
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE - E-Item08                       -                        $802.08
+Department of BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB - Scholarship                    -                       $1000.00
+Department of CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC - Scholarship                    -                       $1000.00
+Department of GGGGGGGGGGGGGGGGGGGGGGGGGGGGGG - Scholarship                    -                       $1000.00
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - A-Item09                       -                        $900.09
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - F-Item10                       -                        $101.10
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE - E-Item10                       -                        $102.10
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF - Scholarship                    -                         $32.69
+
+
+Department of EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+Total Spent       = $3718.46
+Percent of Budget = 13.30%
+----------------------------
+ITEMS RECEIVED
+E-Item01                       -                        $102.01
+E-Item02                       -                        $202.02
+E-Item03                       -                        $302.03
+E-Item04                       -                        $402.04
+E-Item05                       -                        $502.05
+E-Item06                       -                        $602.06
+E-Item07                       -                        $702.07
+E-Item08                       -                        $802.08
+E-Item10                       -                        $102.10
+
+ITEMS NOT RECEIVED
+E-Item09                       -                        $902.09
+E-Item11                       -                        $112.11
+E-Item12                       -                        $122.12
+E-Item13                       -                        $132.13
+E-Item14                       -                        $142.14
+E-Item15                       -                        $152.15
+E-Item16                       -                        $162.16
+E-Item17                       -                        $172.17
+E-Item18                       -                        $182.18
+E-Item19                       -                        $192.19
+
+
+Department of FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+Total Spent       = $3742.15
+Percent of Budget = 13.38%
+----------------------------
+ITEMS RECEIVED
+F-Item01                       -                        $101.01
+F-Item02                       -                        $201.02
+F-Item03                       -                        $301.03
+F-Item04                       -                        $401.04
+F-Item05                       -                        $501.05
+F-Item06                       -                        $601.06
+F-Item07                       -                        $701.07
+F-Item08                       -                        $801.08
+F-Item10                       -                        $101.10
+Scholarship                    -                         $32.69
+
+ITEMS NOT RECEIVED
+F-Item09                       -                        $901.09
+F-Item11                       -                        $111.11
+F-Item12                       -                        $121.12
+F-Item13                       -                        $131.13
+F-Item14                       -                        $141.14
+F-Item15                       -                        $151.15
+F-Item16                       -                        $161.16
+F-Item17                       -                        $171.17
+F-Item18                       -                        $181.18
+F-Item19                       -                        $191.19
+
+
+Department of BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+Total Spent       = $4000.00
+Percent of Budget = 14.31%
+----------------------------
+ITEMS RECEIVED
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+
+ITEMS NOT RECEIVED
+B-Item01                       -               $100000000000.00
+
+
+Department of DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+Total Spent       = $4000.00
+Percent of Budget = 14.31%
+----------------------------
+ITEMS RECEIVED
+D-Item000000000000000000000001 -                       $4000.00
+
+ITEMS NOT RECEIVED
+D-Item000000000000000000000002 -                       $4000.00
+
+
+Department of CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+Total Spent       = $4000.01
+Percent of Budget = 14.31%
+----------------------------
+ITEMS RECEIVED
+C-Item01                       -                          $0.01
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+
+ITEMS NOT RECEIVED
+
+
+Department of GGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+Total Spent       = $4000.03
+Percent of Budget = 14.31%
+----------------------------
+ITEMS RECEIVED
+G-Item02                       -                          $0.01
+G-Item04                       -                          $0.02
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+Scholarship                    -                       $1000.00
+
+ITEMS NOT RECEIVED
+G-Item01                       -               $100000000000.00
+G-Item03                       -               $200000000000.00
+
+
+Department of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Total Spent       = $4500.45
+Percent of Budget = 16.10%
+----------------------------
+ITEMS RECEIVED
+A-Item01                       -                        $100.01
+A-Item02                       -                        $200.02
+A-Item03                       -                        $300.03
+A-Item04                       -                        $400.04
+A-Item05                       -                        $500.05
+A-Item06                       -                        $600.06
+A-Item07                       -                        $700.07
+A-Item08                       -                        $800.08
+A-Item09                       -                        $900.09
+
+ITEMS NOT RECEIVED
+A-Item10                       -                        $100.10
+A-Item11                       -                        $110.11
+A-Item12                       -                        $120.12
+A-Item13                       -                        $130.13
+A-Item14                       -                        $140.14
+A-Item15                       -                        $150.15
+A-Item16                       -                        $160.16
+A-Item17                       -                        $170.17
+A-Item18                       -                        $180.18
+A-Item19                       -                        $190.19
+
+
+
+This solution was completed by:
+<student name>
+<student name #2 (if no partner write "N/A")>
+
