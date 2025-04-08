@@ -1,7 +1,10 @@
+package huffmanEncode;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.Map.Entry;
 
 class Node implements Comparable<Node>{
     String c;
@@ -96,5 +99,11 @@ public class huffman{
 
         genCodes(node.left, currentCode + "0", codes);
         genCodes(node.right, currentCode + "1", codes);
+    }
+    
+    public void printCodePairs() {
+        for (Entry<String, String> entry : conversion.entrySet()) {
+        	System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
     }
 }
