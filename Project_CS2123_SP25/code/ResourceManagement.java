@@ -27,30 +27,24 @@ public class ResourceManagement
    * Simulates the algorithm from the pdf to determine what items are purchased
    * for the given budget and department item lists.
    */
-  public ResourceManagement( String fileNames[], Double budget )
-  {
-    departmentPQ = new PriorityQueue<>();
+  public ResourceManagement( String fileNames[], Double budget ) {
     /* Create a department for each file listed in fileNames */
-    for(int i = 0; i < fileNames.length; i++){
-      File f = new File(fileNames[i]);
-      Scanner scan;
+	  departmentPQ = new PriorityQueue<>();
 
-      try{
-        scan = new Scanner(f);
+	  for (int i = 0; i < fileNames.length; i++) {
+		  File f = new File(fileNames[i]);
+		  Scanner scan;
 
-        String dept = scan.next();
-
-        departmentPQ.add(new Department(dept));
-
+	    try {
+		    scan = new Scanner(f);
+        
+		    departmentPQ.add(new Department(fileNames[i])); //4.09gt - pass file path to Department
         scan.close();
-      }catch(Exception e){
-        System.err.println(e);
-      }
-    }
-
-
-    
-    
+        
+	    } catch(Exception e) {
+		    System.err.println(e);
+	    }
+  }  
     /* Simulate the algorithm for picking the items to purchase */
     /* Be sure to print the items out as you purchase them */
     /* Here's the part of the code I used for printing prices as items */
@@ -58,7 +52,7 @@ public class ResourceManagement
     //System.out.printf("Department of %-30s- %-30s- %30s\n", /*Department's name*/, /*Item's name*/, price );
     
     
-  } 
+  }  
 
   /* printSummary
    * TODO
@@ -88,9 +82,31 @@ class Department implements Comparable<Department>
   /* TODO
    * Constructor to build a Department from the information in the given fileName
    */
-  public Department( String fileName ){
+ public Department(String fileName) {
     /* Open the fileName, create items based on the contents, and add those items to itemsDesired */
-  }
+	  itemsDesired = new LinkedList<>();
+	  itemsReceived = new LinkedList<>();
+	  itemsRemoved = new LinkedList<>();
+	  priority = 0.0;
+
+	  try (BufferedReader br = new BufferedReader((new FileReader(fileName)))) {
+		  System.out.println("Reading file: " + fileName); //4.09gt - file read validation
+		  name = br.readLine();                  
+		
+		  String line;
+		  while ((line = br.readLine()) != null) {
+			  try {                                          //4.09gt - read double or skip line  
+				  double itemPrice = Double.parseDouble(line);
+				  itemsDesired.add(new Item("Item", itemPrice));
+			  } catch (NumberFormatException e) {
+				  continue;
+			  }
+		  }
+	  } catch (IOException e) {
+		  System.err.println("Error reading file: " + fileName); //4.09gt - debug
+		  e.printStackTrace();
+	  }
+}
   
   /*
    * Compares the data in the given Department to the data in this Department
