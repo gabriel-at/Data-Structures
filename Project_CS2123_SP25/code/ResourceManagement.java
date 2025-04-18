@@ -32,6 +32,8 @@ public class ResourceManagement
    */
   public ResourceManagement( String fileNames[], Double budget ) {
     /* Create a department for each file listed in fileNames */
+    this.budget = budget;
+    this.remainingBudget = budget;
 	  departmentPQ = new PriorityQueue<>();
 
 	  for (int i = 0; i < fileNames.length; i++) {
@@ -48,6 +50,27 @@ public class ResourceManagement
 		    System.err.println(e);
 	    }
   }  
+
+    while (!departmentPQ.isEmpty()) {
+      Department department = departmentPQ.poll(); //4.09gt - get the department with highest priority
+
+      while (!department.itemsDesired.isEmpty()) {
+        Item item = department.itemsDesired.poll();
+        
+        if (item.price <= remainingBudget) {
+          department.itemsReceived.add(item);
+          remainingBudget -= item.price;
+          department.priority += item.price;
+          
+          String price = String.format("$%.2f", item.price);
+          System.out.printf("Department of %-30s- %-30s- %30s\n", department.name, item.name, price);
+        } else { 
+          //Skip the item
+          department.itemsRemoved.add(item);
+        }
+
+      }
+    }
     /* Simulate the algorithm for picking the items to purchase */
     /* Be sure to print the items out as you purchase them */
     /* Here's the part of the code I used for printing prices as items */
@@ -56,7 +79,6 @@ public class ResourceManagement
     
     
   }  
-
   /* printSummary
    * TODO
    * Print a summary of what each department received and did not receive.
@@ -87,28 +109,38 @@ class Department implements Comparable<Department>
    */
  public Department(String fileName) {
     /* Open the fileName, create items based on the contents, and add those items to itemsDesired */
-	  itemsDesired = new LinkedList<>();
-	  itemsReceived = new LinkedList<>();
-	  itemsRemoved = new LinkedList<>();
-	  priority = 0.0;
+    itemsDesired = new LinkedList<>();
+    itemsReceived = new LinkedList<>();
+    itemsRemoved = new LinkedList<>();
+    priority = 0.0;
 
-	  try (BufferedReader br = new BufferedReader((new FileReader(fileName)))) {
-		  System.out.println("Reading file: " + fileName); //4.09gt - file read validation
-		  name = br.readLine();                  
-		
-		  String line;
-		  while ((line = br.readLine()) != null) {
-			  try {                                          //4.09gt - read double or skip line  
-				  double itemPrice = Double.parseDouble(line);
-				  itemsDesired.add(new Item("Item", itemPrice));
-			  } catch (NumberFormatException e) {
-				  continue;
-			  }
-		  }
-	  } catch (IOException e) {
-		  System.err.println("Error reading file: " + fileName); //4.09gt - debug
-		  e.printStackTrace();
-	  }
+    try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+        System.out.println("Reading file: " + fileName); // Debugging output
+        name = br.readLine(); // Read the department name
+
+        String line;
+        while ((line = br.readLine()) != null) {
+            line = line.trim(); // Remove leading/trailing whitespace
+            if (line.isEmpty()) {
+                continue; // Skip blank lines
+            }
+
+            String itemName = line; // Read the item name
+            if ((line = br.readLine()) != null) { // Read the next line for the price
+                try {
+                    double itemPrice = Double.parseDouble(line.trim());
+                    itemsDesired.add(new Item(itemName, itemPrice)); // Add the item with name and price
+                } catch (NumberFormatException e) {
+                    System.err.println("Invalid price for item: " + itemName + " in file: " + fileName);
+                }
+            } else {
+                System.err.println("Missing price for item: " + itemName + " in file: " + fileName);
+            }
+        }
+    } catch (IOException e) {
+        System.err.println("Error reading file: " + fileName);
+        e.printStackTrace();
+    }
 }
   
   /*
