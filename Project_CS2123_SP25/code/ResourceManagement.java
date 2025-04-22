@@ -84,7 +84,46 @@ public class ResourceManagement
    * Print a summary of what each department received and did not receive.
    * Be sure to also print remaining items in each itemsDesired Queue.
    */      
-  public void printSummary(  ){
+
+	  public void printSummary() {
+  // Create a copy since departmentPQ may be empty after processing
+  List<Department> deptsToPrint = new ArrayList<>(departmentPQ);
+
+  System.out.println("\nSUMMARY");
+  System.out.println("--------------------------------------------------");
+
+  for (Department dept : deptsToPrint) {
+    String spent = String.format("$%.2f", dept.priority);
+    double percent = (budget == 0) ? 0.0 : (dept.priority / budget) * 100;
+    System.out.println(dept.name);
+    System.out.println("Total Spent = " + spent);
+    System.out.printf("Percent of Budget = %.2f%%\n", percent);
+    System.out.println("----------------------------");
+
+    System.out.println("ITEMS RECEIVED");
+    if (dept.itemsReceived.isEmpty()) {
+      System.out.println("None");
+    } else {
+      for (Item item : dept.itemsReceived) {
+        String price = String.format("$%.2f", item.price);
+        System.out.printf("%-30s - %30s\n", item.name, price);
+      }
+    }
+
+    System.out.println("ITEMS NOT RECEIVED");
+    if (dept.itemsRemoved.isEmpty()) {
+      System.out.println("None");
+    } else {
+      for (Item item : dept.itemsRemoved) {
+        String price = String.format("$%.2f", item.price);
+        System.out.printf("%-30s - %30s\n", item.name, price);
+      }
+    }
+
+    System.out.println();
+  }
+}
+
     
     /* Here's the part of the code I used for printing prices */
     //String price = String.format("$%.2f", /*Item's price*/ );
