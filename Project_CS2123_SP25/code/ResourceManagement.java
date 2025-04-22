@@ -22,7 +22,7 @@ public class ResourceManagement
     System.out.println("Gabriel");
     System.out.println("Jackson");
     System.out.println("Joseph");
-    System.out.println("Odaba");
+    System.out.println("Obada");
   }
 
   /* Constructor for a ResourceManagement object
