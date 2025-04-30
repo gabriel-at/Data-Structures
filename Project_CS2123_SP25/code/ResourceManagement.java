@@ -20,7 +20,8 @@ public class ResourceManagement {
         System.out.println("Odaba");
     }
 
-    /* Constructor for a ResourceManagement object
+    /*
+     * Constructor for a ResourceManagement object
      * Simulates the algorithm to determine what items are purchased
      * for the given budget and department item lists.
      */
@@ -77,7 +78,8 @@ public class ResourceManagement {
         }
     }
 
-    /* printSummary
+    /*
+     * printSummary
      * Print a summary of what each department received and did not receive.
      * Also prints remaining budget.
      */
@@ -85,7 +87,13 @@ public class ResourceManagement {
         System.out.println("\nSUMMARY");
         System.out.println("--------------------------------------------------");
 
-        departments.sort(Comparator.comparing(d -> d.name));
+        // departments.sort(Comparator.comparing(d -> d.name));
+        departments.sort(new Comparator<Department>() {
+            @Override
+            public int compare(Department d1, Department d2) {
+                return d1.name.compareTo(d2.name);
+            }
+        });
 
         for (Department dept : departments) {
             String spent = String.format("$%.2f", dept.priority);
@@ -139,7 +147,8 @@ class Department implements Comparable<Department> {
             String line;
             while ((line = br.readLine()) != null) {
                 line = line.trim();
-                if (line.isEmpty()) continue;
+                if (line.isEmpty())
+                    continue;
                 String itemName = line;
                 if ((line = br.readLine()) != null) {
                     double itemPrice = Double.parseDouble(line.trim());
