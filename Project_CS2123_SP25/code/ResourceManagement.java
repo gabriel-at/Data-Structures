@@ -88,7 +88,7 @@ public class ResourceManagement {
         System.out.println("--------------------------------------------------");
 
         // departments.sort(Comparator.comparing(d -> d.name));
-        departments.sort(new Comparator<Department>() {
+        Collections.sort(departments, new Comparator<Department>() {
             @Override
             public int compare(Department d1, Department d2) {
                 return d1.name.compareTo(d2.name);
