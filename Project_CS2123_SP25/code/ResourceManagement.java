@@ -17,7 +17,7 @@ public class ResourceManagement {
         System.out.println("Gabriel");
         System.out.println("Jackson");
         System.out.println("Joseph");
-        System.out.println("Odaba");
+        System.out.println("Obada");
     }
 
     /*
@@ -48,8 +48,10 @@ public class ResourceManagement {
             Department dept = queue.poll();
 
             // Remove unaffordable items from the front
-            while (!dept.itemsDesired.isEmpty() && dept.itemsDesired.peek().price > remainingBudget) {
+            if (!dept.itemsDesired.isEmpty() && dept.itemsDesired.peek().price > remainingBudget) {
                 dept.itemsRemoved.add(dept.itemsDesired.poll());
+                queue.add(dept); // give department another chance later
+                continue;         // skip to next department
             }
 
             if (dept.itemsDesired.isEmpty()) {
@@ -76,6 +78,13 @@ public class ResourceManagement {
                 queue.add(dept);
             }
         }
+     // Move any remaining items in itemsDesired to itemsRemoved
+        for (Department dept : departments) {
+            while (!dept.itemsDesired.isEmpty()) {
+                dept.itemsRemoved.add(dept.itemsDesired.poll());
+            }
+        }
+
     }
 
     /*
